@@ -8,3 +8,41 @@
 		@content;
 	}
 }
+@mixin heading {
+	@media screen and (max-width:295px) {
+		flex-wrap: nowrap;
+	}
+	@media screen and (max-width:229px) {
+		flex-wrap: wrap;
+		overflow: visible;
+	}
+}
+@mixin text ($fs, $fw, $color, $spacing) {
+	font-size: $fs;
+	font-weight: $fw;
+	color: $color;
+	letter-spacing: $spacing;
+}
+@mixin button ($fs, $fw, $color, $rad, $padding_x ,$padding_y,$text_color_hover,$bg_color_hover) {
+	font-size: $fs;
+	font-weight: $fw;
+	color: $color;
+	background: #fff;
+	border: 1px solid $color;
+	border-radius: $rad;
+	padding: $padding_y $padding_x;
+	transition: 0.3s ease-out;
+	&:hover{
+		color: $text_color_hover;
+		background: $bg_color_hover;
+	}
+}
+@mixin button-without-hover ($fs, $fw, $color, $rad, $padding_x ,$padding_y,$text_color_hover,$bg_color_hover) {
+	font-size: $fs;
+	font-weight: $fw;
+	color: #fff;
+	background: $color;
+	border: 1px solid $color;
+	border-radius: $rad;
+	padding: $padding_y $padding_x;
+}
