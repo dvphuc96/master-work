@@ -1,16 +1,231 @@
 .breadcrumbs {
-    padding: 15px 20px;
-    margin-top: 90px;
-    .container-fluid{
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 25px;
-      a{
-        @include text(14px, 400, $primary_text_color, 0);
-        text-decoration: none;
+  padding: 15px 20px;
+  margin-top: 90px;
+
+  .container-fluid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+
+    a {
+      @include text(14px, 400, $primary_text_color, 0);
+      text-decoration: none;
+    }
+
+    .breadcrumb_last {
+      @include text(14px, 400, $primary_text_color, 0);
+    }
+  }
+}
+
+.blog-single-main {
+  .blog-single-1 {
+    .container-fluid {
+      .head {
+        .content {
+          .tagname {}
+
+          .title {}
+
+          .blog-list {
+            li {
+              p {
+                span {}
+              }
+            }
+          }
+        }
       }
-      .breadcrumb_last{
-        @include text(14px, 400, $primary_text_color, 0);
+
+      .body {
+        img {}
+      }
+
+      .foot {
+        .content {
+          .paragraph {}
+
+          .paragraph-img {
+            .left {
+              img {}
+            }
+
+            .right {
+              .paragraph {}
+            }
+          }
+        }
       }
     }
   }
+
+  .blog-single-2 {
+    .container-fluid {
+      .wrapper {
+        .blockquote {
+          border-left: 4px solid #65bec2;
+          padding-left: 16px;
+
+          .quotes {}
+
+          .blockquote-footer {
+            &::before {
+              content: "\2014 \00A0";
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .blog-single-3 {
+    .container-fluid {
+      .wrapper {
+        .main-content {
+          .head {}
+
+          .sub-head {}
+
+          .para {}
+
+          .para-img {
+            .left {
+              img {}
+            }
+
+            .right {
+              .para {}
+            }
+          }
+
+          .post-navigation {
+            .post-prev {
+              .nav-title {
+                span {}
+              }
+
+              .posts-view {
+                img {}
+
+                label {}
+              }
+            }
+
+            .post-next {
+              .nav-title {
+                span {}
+              }
+
+              .posts-view {
+                img {}
+
+                label {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blog-single-4 {
+    .container-fluid {
+      .wrapper {
+        .main-content {
+          .title {}
+
+          .comment-item {
+            .commentator {
+              img {}
+            }
+
+            .comment {
+              .name {}
+
+              .time {}
+
+              .opinion {}
+
+              .reply-btn {}
+
+              .comment-item {
+                .commentator {
+                  img {}
+                }
+
+                .comment {
+                  .name {}
+
+                  .time {}
+
+                  .opinion {}
+
+                  .reply-btn {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blog-single-5 {
+    .container-fluid {
+      .wrapper {
+        .main-content {
+          .title {}
+
+          .posts {
+            .column {
+              .box {
+                .card {
+                  a {}
+                }
+
+                .card-body {
+                  .card-grid {
+                    .card-grid-column1 {
+                      a {
+                        .card-title {}
+                      }
+
+                      .card-text {}
+                    }
+
+                    .card-grid-column2 {
+                      .imgae-caption {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .blog-single-6 {
+    .container-fluid {
+      .wrapper {
+        .main-content {
+          .title {}
+
+          .main-form {
+            .form-input {
+              input {}
+
+              .contact-textarea {}
+            }
+
+            .btn-contain {
+              .btn-add {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

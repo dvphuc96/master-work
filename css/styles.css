@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Document
  * ========================================================================== */
 /**
@@ -1777,4 +1778,13 @@ footer .container-fluid .wrapper .copyright .columns-2 .social li a i {
   font-weight: 400;
   color: #2C3038;
   letter-spacing: 0;
+}
+
+.blockquote {
+  border-left: 4px solid #65bec2;
+  padding-left: 16px;
+}
+
+.blockquote-footer::before {
+  content: "— ";
 }
