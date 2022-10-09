@@ -1066,6 +1066,25 @@ header .navigation .container-fluid .navbar-toggler {
 header .navigation .container-fluid .navbar-toggler i {
   color: #fff;
 }
+header .navigation .container-fluid .menu .list .nav-item:hover {
+  background: transparent;
+}
+header .navigation .container-fluid .menu .list .nav-item .nav-link {
+  position: relative;
+}
+header .navigation .container-fluid .menu .list .nav-item .nav-link:hover::after {
+  width: 50%;
+}
+header .navigation .container-fluid .menu .list .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  left: 8px;
+  bottom: 5px;
+  background: #DC4F72;
+  transition: width 0.3s;
+}
 header .navigation .container-fluid .menu .list .home .nav-link {
   font-size: 16px;
   font-weight: 400;
