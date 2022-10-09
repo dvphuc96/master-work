@@ -21,9 +21,148 @@
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
-    <header></header>
+    <!-- <div class="side-right-bar"></div> -->
+    <header class="bg-white">
+        <nav class="navbar navbar-expand-lg navigation bg-white">
+          <div class="container-fluid text-center">
+            <a class="navbar-brand logo" href="index.html">
+              <span class="fa fa-handshake"></span>
+              <span>Masterwork</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="navbar-toggler-icon open-close"></i>
+            </button>
+            <div class="collapse navbar-collapse menu" id="navbarNav">
+              <ul class="navbar-nav ms-md-auto gap-2 list">
+                <li class="nav-item rounded home px-2">
+                  <a class="nav-link" aria-current="page" href="index.html"></i>Home</a>
+                </li>
+                <li class="nav-item rounded about px-2">
+                  <a class="nav-link" href="about.html"></i>About</a>
+                </li>
+                <li class="nav-item rounded service px-2">
+                  <a class="nav-link" href="service.html"></i>Services</a>
+                </li>
+                <li class="nav-item dropdown rounded page px-2">
+                  <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                    <i class="fa fa-angle-down fs-6"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="blog.html">Blog posts</a></li>
+                    <li><a class="dropdown-item" href="blog-single.html">Blog single</a></li>
+                    <li><a class="dropdown-item" href="landing-single.html">Landing page</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item rounded contact px-2">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item ml-lg-3 px-2 ml-0 mt-lg-0 mt-3 schedule">
+                  <a class="btn btn-outline-primary theme-button button-schedule" href="contact.html">Schedule a Demo</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <!-- <nav id="breadcrumbs" class="breadcrumbs bg-light">
+      <div class="container-fluid">
+        <a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">Single Post</span>
+      </div>
+    </nav> -->
     <main></main>
-    <footer></footer>
+    <footer>
+      <div class="container-fluid">
+        <div class="wrapper">
+          <div class="row main-row">
+            <section class="col-lg-2 col-md-6 col-sm-12 column">
+              <div class="footer-heading">
+                <h3>Company</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Services</li>
+                  <li>Blog</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+            </section>
+            <section class="col-lg-2 col-md-6 col-sm-12 column">
+              <div class="footer-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li>Case Studies</li>
+                  <li>Our Branches</li>
+                  <li>Latest Media</li>
+                  <li>About Company</li>
+                  <li>Our People</li>
+                </ul>
+              </div>
+            </section>
+            <section class="col-lg-2 col-md-6 col-sm-12 column">
+              <div class="footer-heading">
+                <h3>Our Services</h3>
+              </div>
+              <div class="footer-body">
+                <ul>
+                  <li>Privacy Policy</li>
+                  <li>Our Terms</li>
+                  <li>Services</li>
+                  <li>Landing Page</li>
+                  <li>Our People</li>
+                </ul>
+              </div>
+            </section>
+            <section class="col-lg-5 col-md-6 col-sm-12 column form-handle">
+              <div class="footer-heading">
+                <h3>Newsletter</h3>
+              </div>
+              <div class="footer-body">
+                <div class="end-column">
+                  <h4>Get latest updates and offers.</h4>
+                  <form action="#" class="subscribe" method="post">
+                    <input type="email" name="email" placeholder="Email Address" required="">
+                    <button type="submit">Go</button>
+                  </form>
+                  <p>Sign up for our latest news &amp; articles. We won't give you spam mails.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <hr class="row-barrier" style="opacity: 0.1;">
+
+          <div class="copyright mt-4">
+            <div class="columns text-lg-left text-center">
+              <p>© 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a></p>
+            </div>
+            <div class="columns-2 mt-lg-0 mt-3">
+              <ul class="social">
+                <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li><a href="#twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li><a href="#google"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li><a href="#github"><i class="fab fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Script -->
+
+    <!-- BS% -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -34,5 +173,21 @@
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Seft-defined Script -->
+    <script>
+      // When the user scrolls down 90px from the top of the document, resize the navbar's padding and the logo's font size
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+          document.querySelector(".header").style.height = "70px";
+          document.querySelector(".breadcrumbs").style.marginTop = "70px";
+        } else {
+          document.querySelector(".header").style.height = "90px";
+          document.querySelector(".breadcrumbs").style.marginTop = "90px";
+        }
+      }
+      </script>
   </body>
 </html>
