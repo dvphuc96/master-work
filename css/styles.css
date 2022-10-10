@@ -1067,7 +1067,7 @@ header .navigation .container-fluid .navbar-toggler i {
   color: #fff;
 }
 @media screen and (max-width: 992px) {
-  header .navigation .container-fluid .menu {
+  header .navigation .container-fluid .menu .list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1097,6 +1097,11 @@ header .navigation .container-fluid .menu .list .nav-item .nav-link::after {
   background: #DC4F72;
   transition: width 0.5s;
 }
+@media screen and (max-width: 992px) {
+  header .navigation .container-fluid .menu .list .nav-item .nav-link::after {
+    left: 0;
+  }
+}
 header .navigation .container-fluid .menu .list .home .nav-link {
   font-size: 16px;
   font-weight: 400;
@@ -1120,6 +1125,11 @@ header .navigation .container-fluid .menu .list .page .nav-link {
   font-weight: 400;
   color: #2C3038;
   letter-spacing: 0;
+}
+@media screen and (max-width: 992px) {
+  header .navigation .container-fluid .menu .list .page .nav-link::after {
+    left: 32%;
+  }
 }
 header .navigation .container-fluid .menu .list .page .nav-link a i {
   font-size: 14px !important;
@@ -1147,6 +1157,11 @@ header .navigation .container-fluid .menu .list .page ul::before {
   top: -7px;
   left: 65%;
   z-index: 1001;
+}
+@media screen and (max-width: 992px) {
+  header .navigation .container-fluid .menu .list .page ul::before {
+    top: 33px;
+  }
 }
 header .navigation .container-fluid .menu .list .page ul li {
   transition: all 0.5s ease;
