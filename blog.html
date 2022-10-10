@@ -118,17 +118,17 @@
           </div>
         </div> -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item owl-item active">
+          <div class="carousel-inner owl-carousel owl-theme">
+            <div class="carousel-item active owl-item item">
               <div class="row row1">
-                <div class="col col1">
+                <div class="col col-6 col1">
                   <a href="blog-single.html" class="image">
                     <img src="./img/blog_b6.jpg" alt="blog b6">
                     <p class="date">8 Sep, 2020</p>
                   </a>
 
                 </div>
-                <div class="col col2">
+                <div class="col col-6 col2">
                   <div class="blog-info">
                     <label class="tag-label green">Programming</label>
                     <h4><a class="" href="blog-single.html">The Best Choice For Your Successful Business!</a></h4>
@@ -142,16 +142,16 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item owl-item item">
               <div class="row row1">
-                <div class="col col1">
+                <div class="col col-6 col1">
                   <a href="blog-single.html" class="image">
                     <img src="./img/blog_b5.jpg" alt="blog b5">
                     <p class="date">8 Sep, 2020</p>
                   </a>
 
                 </div>
-                <div class="col col2">
+                <div class="col col-6 col2">
                   <div class="blog-info">
                     <label class="tag-label blue">Industry</label>
                     <h4><a class="" href="blog-single.html">The Best Choice For Your Successful Business!</a></h4>
@@ -165,16 +165,16 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item owl-item item">
               <div class="row row1">
-                <div class="col col1">
+                <div class="col col-6 col1">
                   <a href="blog-single.html" class="image">
                     <img src="./img/blog_b9.jpg" alt="blog b9">
                     <p class="date">8 Sep, 2020</p>
                   </a>
 
                 </div>
-                <div class="col col2">
+                <div class="col col-6 col2">
                   <div class="blog-info">
                     <label class="tag-label red">Design</label>
                     <h4><a class="" href="blog-single.html">The Best Choice For Your Successful Business!</a></h4>
@@ -294,12 +294,19 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
     crossorigin="anonymous"></script>
+
+  <!-- OWL JS -->
+  <script src="./js/owl.carousel.min.js"></script>
 
   <!-- Seft-defined Script -->
   <script>
@@ -315,6 +322,23 @@
         document.querySelector(".breadcrumbs").style.marginTop = "90px";
       }
     }
+
+    // $('.owl-carousel').owlCarousel({
+    //   loop: true,
+    //   margin: 10,
+    //   nav: true,
+    //   responsive: {
+    //     0: {
+    //       items: 1
+    //     },
+    //     800: {
+    //       items: 1
+    //     },
+    //     1280: {
+    //       items: 1
+    //     }
+    //   }
+    // })
   </script>
 </body>
 
