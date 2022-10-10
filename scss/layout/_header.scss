@@ -37,6 +37,12 @@ header {
         }
       }
       .menu {
+        @media screen and (max-width: 992px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
         .list {
           .nav-item {
             &:hover {
@@ -44,20 +50,23 @@ header {
             }
             .nav-link {
               position: relative;
+              transition: all 0.6s ease;
+              
               &:hover {
+                color: $tertiary_text_color;
                 &::after {
-                  width: 50%;
+                  width: 20px;
                 }
               }
               &::after {
                 content: "";
                 position: absolute;
                 width: 0;
-                height: 1px;
+                height: 2px;
                 left: 8px;
                 bottom: 5px;
                 background: $tertiary_text_color;
-                transition: width 0.3s;
+                transition: width 0.5s;
               }
             }
           }
@@ -87,8 +96,54 @@ header {
               }
             }
             ul {
+              @media screen and (max-width: 992px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+              }
+              &::before {
+                content: "";
+                width: 14px;
+                height: 14px;
+                background: #fff;
+                border: 1px solid rgba(0, 0, 0, 0.15);
+                display: block;
+                border-right: none;
+                border-bottom: none;
+                transform: translateX(-50%) rotateZ(45deg);
+                position: absolute;
+                top: -7px;
+                left: 65%;
+                z-index: 1001;
+              }
               li {
+                transition: all 0.5s ease;
+
+                &:hover {
+                  a {
+                    color: $tertiary_text_color;
+                    background: transparent;
+                    &::after {
+                      width: 20px;
+                    }
+                  }
+                }
                 a {
+                  padding: 10px 25px;
+                  padding-right: 50px;
+                  position: relative;
+                  transition: all 0.5s ease;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    left: 25px;
+                    bottom: 5px;
+                    background: $tertiary_text_color;
+                    transition: width 0.5s;
+                  }
                 }
               }
             }
@@ -110,7 +165,7 @@ header {
                 $tertiary_text_color,
                 5px,
                 30px,
-                10px,
+                15px,
                 #fff,
                 $tertiary_text_color
               );
