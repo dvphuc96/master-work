@@ -15,7 +15,7 @@ header {
   width: 100%;
   z-index: 99;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
-  transition: all 5s;
+  transition: all 1s;
   .navigation {
     position: relative;
     .container-fluid {
@@ -177,7 +177,7 @@ header {
                 $tertiary_text_color,
                 5px,
                 30px,
-                15px,
+                10px,
                 #fff,
                 $tertiary_text_color
               );

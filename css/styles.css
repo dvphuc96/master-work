@@ -1045,7 +1045,7 @@ header {
   width: 100%;
   z-index: 99;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
-  transition: all 5s;
+  transition: all 1s;
 }
 header .navigation {
   position: relative;
@@ -1210,7 +1210,7 @@ header .navigation .container-fluid .menu .list .schedule a.button-schedule {
   background: #fff;
   border: 1px solid #DC4F72;
   border-radius: 5px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   transition: 0.3s ease-out;
 }
 header .navigation .container-fluid .menu .list .schedule a.button-schedule:hover {
@@ -3667,4 +3667,59 @@ main .carousel .container .carousel .carousel-control-next .carousel-control-nex
 }
 .blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain .btn-add:hover {
   background: #bb1841;
+}
+
+.breadcrumbs {
+  padding: 15px 20px;
+  margin-top: 90px;
+  transition: all 1s;
+}
+.breadcrumbs .container-fluid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 25px;
+}
+.breadcrumbs .container-fluid a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2C3038;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+.breadcrumbs .container-fluid .breadcrumb_last {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2C3038;
+  letter-spacing: 0;
+}
+
+@media screen and (min-width: 300px) {
+  .body .contact .container-fluid {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 576px) {
+  .body .contact .container-fluid {
+    max-width: 100%;
+    padding: 0 25px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .body .contact .container-fluid {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .body .contact .container-fluid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 25px;
+  }
+}
+.body .contact .container-fluid .main-content {
+  max-width: 750px;
+  margin: 0 auto;
 }
