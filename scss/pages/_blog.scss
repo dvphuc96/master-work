@@ -1,0 +1,147 @@
+main {
+  .nav-page {
+    background-color: $blue_gray_color;
+    .breadcrumbs {
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 25px;
+        a {
+          text-decoration: none;
+          @include text(14px, 400, $tertiary_text_color, 0);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .breadcrumbs-last {
+          @include text(14px, 400, $base_text_color, 0);
+        }
+      }
+    }
+  }
+  .carousel {
+    background-color: $blue_gray_color;
+    padding: 50px 0;
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      .carousel {
+        .carousel-inner {
+          .item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            .row {
+              .col1 {
+                .image {
+                    display: inline-block;
+                    height: 100%;
+                    text-decoration: none;
+                    position: relative;
+                  img {
+                    height: 100%;
+                  }
+                  .date {
+                    position: absolute;
+                    // z-index: 100;
+                    top: 0;
+                    right: 0;
+                    padding: 15px;
+                    @include text(18px, 700, #fff, 0);
+                    background-color: $tertiary_text_color;
+                  }
+                }
+              }
+              .col2 {
+                .blog-info {
+                  padding: 30px;
+                  label {
+                    margin-top: 50px;
+                    margin-bottom: 20px;
+                    padding: 5px 15px;
+                    border-radius: 30px;
+                    @include text(13px, 600, #000, 0);
+                    &.green {
+                      color: #008800;
+                      background-color: rgba(0, 128, 0, 0.2);
+                    }
+                    &.blue {
+                      color: #0000ff;
+                      background-color: rgba(0, 0, 255, 0.2);
+                    }
+                    &.red {
+                      color: $tertiary_text_color;
+                      background-color: rgba(238, 97, 120, 0.2);
+                    }
+                  }
+                  h4 {
+                    a {
+                      text-decoration: none;
+                      @include text(26px, 600, $base_text_color, 0);
+                      //   word-spacing: 1px;
+                      letter-spacing: 0px;
+                      transition: all 0.5s ease;
+                      &:hover{
+                        color: $tertiary_text_color;
+                      }
+                    }
+                  }
+                  .blog-text {
+                    padding-top: 20px;
+                    @include text(15px, 300, $base_text_color, 0);
+                    margin-bottom: 50px;
+                  }
+                  .btn-news {
+                    text-decoration: none;
+                    @include text(16px, 400, $tertiary_text_color, 0);
+                    &:hover{
+                        span{
+                            transform: translateX(2px);
+                        }
+                    }
+                    span {
+                        transition: all 0.5s ease;
+                        padding-left: 5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .carousel-control-prev {
+          justify-content: start;
+          left: 2%;
+          .carousel-control-prev-icon {
+            padding: 15px;
+            background-color: rgba(220, 79, 114, 0.4);
+            border-radius: 50%;
+            transition: all 0.6s ease;
+            cursor: pointer;
+            &:hover {
+              background-color: $tertiary_text_color;
+            }
+          }
+          .visually-hidden {
+          }
+        }
+        .carousel-control-next {
+          justify-content: end;
+          right: 2%;
+          .carousel-control-next-icon {
+            padding: 15px;
+            background-color: rgba(220, 79, 114, 0.4);
+            border-radius: 50%;
+            transition: all 0.6s ease;
+            cursor: pointer;
+            &:hover {
+              background-color: $tertiary_text_color;
+            }
+          }
+          .visually-hidden {
+          }
+        }
+      }
+    }
+  }
+}
