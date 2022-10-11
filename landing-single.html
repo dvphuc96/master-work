@@ -21,63 +21,8 @@
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
-    <header id="header" class="bg-white">
-      <nav class="navbar navbar-expand-lg navigation bg-white">
-        <div class="container-fluid text-center">
-          <a id="logo" class="navbar-brand logo" href="index.html">
-            <span class="fa fa-handshake"></span>
-            <span>Masterwork</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="navbar-toggler-icon open-close"></i>
-          </button>
-          <div class="collapse navbar-collapse menu" id="navbarNav">
-            <ul class="navbar-nav ms-md-auto gap-2 list">
-              <li class="nav-item rounded home px-2">
-                <a class="nav-link" aria-current="page" href="index.html"></i>Home</a>
-              </li>
-              <li class="nav-item rounded about px-2">
-                <a class="nav-link" href="about.html"></i>About</a>
-              </li>
-              <li class="nav-item rounded service px-2">
-                <a class="nav-link" href="service.html"></i>Services</a>
-              </li>
-              <li class="nav-item dropdown rounded page px-2">
-                <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Pages
-                  <i class="fa fa-angle-down fs-6"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="blog.html">Blog posts</a></li>
-                  <li><a class="dropdown-item" href="blog-single.html">Blog single</a></li>
-                  <li><a class="dropdown-item" href="landing-single.html">Landing page</a></li>
-                </ul>
-              </li>
-              <li class="nav-item rounded contact px-2">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item ml-lg-3 px-2 ml-0 mt-lg-0 mt-3 schedule">
-                <a class="btn btn-outline-primary theme-button button-schedule" href="contact.html">Schedule a Demo</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="body">
-      <section class="landing-carousel"></section>
-      <section class="landing-about">
-        <section class="landing-about1"></section>
-        <section class="landing-about2"></section>
-      </section>
-      <section class="landing-index"></section>
-      <section class="landing-service"></section>
-      <section class="landing-best-product"></section>
-      <section class="landing-explore"></section>
-      <section class="landing-q&a"></section>
-    </main>
+    <header></header>
+    <main></main>
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -89,17 +34,5 @@
       integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      // When the user scrolls down 90px from the top of the document, resize the navbar's padding and the logo's font size
-      window.onscroll = function () { scrollFunction() };
-      function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-          document.querySelector("header").style.height = "70px";
-        } else {
-          document.querySelector("header").style.height = "90px";
-        }
-      }
-    </script>
   </body>
 </html>
