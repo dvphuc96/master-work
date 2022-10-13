@@ -8,7 +8,7 @@
     padding: 0 25px;
 
     a {
-      @include text(14px, 400, $primary_text_color, 0);
+      @include text(14px, 400, $tertiary_text_color, 0);
       text-decoration: none;
     }
 
