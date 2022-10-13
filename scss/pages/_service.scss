@@ -4,23 +4,45 @@
 @import "../foundation/sanitize";
 
 main {
-  .nav-page {
-    background-color: $blue_gray_color;
-    .breadcrumbs {
-      .container {
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 25px;
-        a {
-          text-decoration: none;
-          @include text(14px, 400, $tertiary_text_color, 0);
-          &:hover {
-            text-decoration: underline;
-          }
+  // .nav-page {
+  //   background-color: $blue_gray_color;
+  //   .breadcrumbs {
+  //     .container {
+  //       max-width: 1200px;
+  //       margin: auto;
+  //       padding: 0 25px;
+  //       a {
+  //         text-decoration: none;
+  //         @include text(14px, 400, $tertiary_text_color, 0);
+  //         &:hover {
+  //           text-decoration: underline;
+  //         }
+  //       }
+  //       .breadcrumbs-last {
+  //         @include text(14px, 400, $base_text_color, 0);
+  //       }
+  //     }
+  //   }
+  // }
+  .breadcrumbs {
+    padding: 15px 20px;
+    margin-top: 90px;
+    transition: all 1.5s;
+    .container-fluid {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 25px;
+  
+      a {
+        @include text(14px, 400, $tertiary_text_color, 0);
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
         }
-        .breadcrumbs-last {
-          @include text(14px, 400, $base_text_color, 0);
-        }
+      }
+  
+      .breadcrumb_last {
+        @include text(14px, 400, $primary_text_color, 0);
       }
     }
   }
