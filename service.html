@@ -399,6 +399,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Button Back To Top Start -->
+  <button onclick="topFunction()" id="myBtn" class="btn-backTop" title="Go to top">
+    <i class="fa fa-angle-up"></i>
+  </button>
+  <!-- Button Back To Top End -->
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
@@ -408,17 +415,24 @@
 
   <!-- Seft-defined Script -->
   <script>
+
     // When the user scrolls down 90px from the top of the document, resize the navbar's padding and the logo's font size
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
-      if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
-        document.querySelector(".header").style.height = "70px";
-        document.querySelector(".breadcrumbs").style.marginTop = "70px";
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.querySelector("button.btn-backTop").style.display = "block"
+        document.querySelector("header").style.height = "70px";
+        document.querySelector("breadcrumbs").style.marginTop = "70px";
       } else {
-        document.querySelector(".header").style.height = "90px";
-        document.querySelector(".breadcrumbs").style.marginTop = "90px";
+        document.querySelector("button.btn-backTop").style.display = "none"
+        document.querySelector("header").style.height = "90px";
+        document.querySelector("breadcrumbs").style.marginTop = "90px";
       }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
   </script>
 </body>
