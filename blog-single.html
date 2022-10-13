@@ -529,8 +529,8 @@
   <!-- Footer End -->
 
   <!-- Button Back To Top Start -->
-  <button onclick="topFunction()" id="myBtn" class="btn-backTop" title="Go to top"><i
-      class="fa fa-angle-up"></i>
+  <button onclick="topFunction()" id="myBtn" class="btn-backTop" title="Go to top">
+    <i class="fa fa-angle-up"></i>
   </button>
   <!-- Button Back To Top End -->
 
@@ -546,18 +546,19 @@
 
   <!-- Seft-defined Script -->
   <script>
+
     // When the user scrolls down 90px from the top of the document, resize the navbar's padding and the logo's font size
     window.onscroll = function () { scrollFunction() };
 
     function scrollFunction() {
       if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        document.querySelector("button.btn-backTop").style.display = "block"
         document.querySelector("header").style.height = "70px";
         document.querySelector("breadcrumbs").style.marginTop = "70px";
-        document.getElementsByClassName("btn-backTop").style.display = "block"
       } else {
+        document.querySelector("button.btn-backTop").style.display = "none"
         document.querySelector("header").style.height = "90px";
         document.querySelector("breadcrumbs").style.marginTop = "90px";
-        document.getElementsByClassName("btn-backTop").style.display = "none"
       }
     }
     function topFunction() {

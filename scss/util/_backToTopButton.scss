@@ -1,5 +1,5 @@
 .btn-backTop {
-    // display: none;
+    display: none;
     /* Hidden by default */
     position: fixed;
     /* Fixed/sticky position */
@@ -23,7 +23,7 @@
     /* Some padding */
     font-size: 18px;
     /* Increase font size */
-    transition: all 0.5s;
+    transition: all 1s;
     &:hover {
         background-color: #df2251;
     }

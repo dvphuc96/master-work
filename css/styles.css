@@ -1893,6 +1893,7 @@ footer .container-fluid .wrapper .copyright .columns-2 .social li a i:hover {
 }
 
 .btn-backTop {
+  display: none;
   /* Hidden by default */
   position: fixed;
   /* Fixed/sticky position */
@@ -1916,7 +1917,7 @@ footer .container-fluid .wrapper .copyright .columns-2 .social li a i:hover {
   /* Some padding */
   font-size: 18px;
   /* Increase font size */
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .btn-backTop:hover {
   background-color: #df2251;
@@ -3063,7 +3064,7 @@ main .news .container .pagination .page-arrow .page-link span {
 .breadcrumbs {
   padding: 15px 20px;
   margin-top: 90px;
-  transition: all 1.5s;
+  transition: all 1s;
 }
 .breadcrumbs .container-fluid {
   max-width: 1200px;
@@ -3877,7 +3878,7 @@ main .news .container .pagination .page-arrow .page-link span {
 .blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain {
   text-align: right;
 }
-.blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain .button {
+.blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain button {
   cursor: pointer;
   display: inline-block;
   line-height: 52px;
@@ -3892,7 +3893,7 @@ main .news .container .pagination .page-arrow .page-link span {
   color: #fff;
   transition: 0.3s ease-out;
 }
-.blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain .button:hover {
+.blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain button:hover {
   background: #bb1841;
 }
 
@@ -4056,7 +4057,7 @@ main .news .container .pagination .page-arrow .page-link span {
 .body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send {
   text-align: right;
 }
-.body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send .button {
+.body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send button {
   cursor: pointer;
   display: inline-block;
   line-height: 52px;
@@ -4071,7 +4072,7 @@ main .news .container .pagination .page-arrow .page-link span {
   color: #fff;
   transition: 0.3s ease-out;
 }
-.body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send .button:hover {
+.body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send button:hover {
   background: #bb1841;
 }
 .body .call-help {
