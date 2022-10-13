@@ -102,7 +102,10 @@ header {
                 display: inline-block;
                 &::after {
                   width: 20px;
-                  left: 0px;
+                  @media (min-width: 992px) and (max-width: 2000px) {
+                    left: 8px;
+                  }
+                  // left: 0px;
                 }
               }
               &::after {
@@ -133,6 +136,7 @@ header {
                     bottom: 0px;
                     background: $tertiary_text_color;
                     transition: width 0.5s;
+                   
                   }
                   &:hover {
                     background: transparent !important;
