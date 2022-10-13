@@ -1139,7 +1139,11 @@ header .navigation .container-fluid .menu .list .page .nav-link:hover {
 }
 header .navigation .container-fluid .menu .list .page .nav-link:hover::after {
   width: 20px;
-  left: 0px;
+}
+@media (min-width: 992px) and (max-width: 2000px) {
+  header .navigation .container-fluid .menu .list .page .nav-link:hover::after {
+    left: 8px;
+  }
 }
 header .navigation .container-fluid .menu .list .page .nav-link::after {
   content: "";
@@ -1811,11 +1815,27 @@ footer .container-fluid .wrapper .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+  footer .container-fluid .wrapper .copyright {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer .container-fluid .wrapper .copyright .columns {
+    width: 100%;
+  }
 }
 footer .container-fluid .wrapper .copyright .columns p {
   line-height: 22px;
   color: #5a5a5a;
   font-size: 16px;
+}
+@media screen and (max-width: 500px) {
+  footer .container-fluid .wrapper .copyright .columns p {
+    font-size: 14px;
+  }
 }
 footer .container-fluid .wrapper .copyright .columns p a {
   text-decoration: none;
@@ -1826,13 +1846,29 @@ footer .container-fluid .wrapper .copyright .columns p a {
 footer .container-fluid .wrapper .copyright .columns p a:hover {
   color: #DC4F72;
 }
+@media screen and (max-width: 992px) {
+  footer .container-fluid .wrapper .copyright .columns-2 {
+    text-align: center !important;
+  }
+}
 footer .container-fluid .wrapper .copyright .columns-2 .social {
   display: flex;
   justify-content: flex-end;
   list-style: none;
 }
+@media screen and (max-width: 992px) {
+  footer .container-fluid .wrapper .copyright .columns-2 .social {
+    justify-content: center;
+    padding: 0;
+  }
+}
 footer .container-fluid .wrapper .copyright .columns-2 .social li {
   margin: 0 10px;
+}
+@media screen and (max-width: 500px) {
+  footer .container-fluid .wrapper .copyright .columns-2 .social li {
+    margin: 0 5px;
+  }
 }
 footer .container-fluid .wrapper .copyright .columns-2 .social li a {
   color: #2C3038;
@@ -1847,8 +1883,44 @@ footer .container-fluid .wrapper .copyright .columns-2 .social li a i {
   font-size: 15px;
   transition: all 0.3s;
 }
+@media screen and (max-width: 500px) {
+  footer .container-fluid .wrapper .copyright .columns-2 .social li a i {
+    font-size: 13px;
+  }
+}
 footer .container-fluid .wrapper .copyright .columns-2 .social li a i:hover {
   color: #DC4F72;
+}
+
+.btn-backTop {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 50px;
+  /* Place the button at the bottom of the page */
+  right: 0;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #DC4F72;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 10px 15px;
+  /* Some padding */
+  font-size: 18px;
+  /* Increase font size */
+  transition: all 1s;
+}
+.btn-backTop:hover {
+  background-color: #df2251;
 }
 
 img {
@@ -2366,28 +2438,30 @@ textarea,
   position: absolute;
 }
 
-main .nav-page {
-  background-color: #f7f9fc;
+main .breadcrumbs {
+  padding: 15px 20px;
+  margin-top: 90px;
+  transition: all 1.5s;
 }
-main .nav-page .breadcrumbs .container {
+main .breadcrumbs .container-fluid {
   max-width: 1200px;
   margin: auto;
   padding: 0 25px;
 }
-main .nav-page .breadcrumbs .container a {
-  text-decoration: none;
+main .breadcrumbs .container-fluid a {
   font-size: 14px;
   font-weight: 400;
   color: #DC4F72;
   letter-spacing: 0;
+  text-decoration: none;
 }
-main .nav-page .breadcrumbs .container a:hover {
+main .breadcrumbs .container-fluid a:hover {
   text-decoration: underline;
 }
-main .nav-page .breadcrumbs .container .breadcrumbs-last {
+main .breadcrumbs .container-fluid .breadcrumb_last {
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: #2C3038;
   letter-spacing: 0;
 }
 main .Services {
@@ -2678,28 +2752,30 @@ main .features .container .row .col2 .content .title-service p {
 main .features .container .row .col2 .content .button {
   margin-top: 50px;
 }
-main .nav-page {
-  background-color: #f7f9fc;
+main .breadcrumbs {
+  padding: 15px 20px;
+  margin-top: 90px;
+  transition: all 1.5s;
 }
-main .nav-page .breadcrumbs .container {
+main .breadcrumbs .container-fluid {
   max-width: 1200px;
   margin: auto;
   padding: 0 25px;
 }
-main .nav-page .breadcrumbs .container a {
-  text-decoration: none;
+main .breadcrumbs .container-fluid a {
   font-size: 14px;
   font-weight: 400;
   color: #DC4F72;
   letter-spacing: 0;
+  text-decoration: none;
 }
-main .nav-page .breadcrumbs .container a:hover {
+main .breadcrumbs .container-fluid a:hover {
   text-decoration: underline;
 }
-main .nav-page .breadcrumbs .container .breadcrumbs-last {
+main .breadcrumbs .container-fluid .breadcrumb_last {
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: #2C3038;
   letter-spacing: 0;
 }
 main .carousel {
@@ -2988,7 +3064,7 @@ main .news .container .pagination .page-arrow .page-link span {
 .breadcrumbs {
   padding: 15px 20px;
   margin-top: 90px;
-  transition: all 1.5s;
+  transition: all 1s;
 }
 .breadcrumbs .container-fluid {
   max-width: 1200px;
@@ -2998,9 +3074,12 @@ main .news .container .pagination .page-arrow .page-link span {
 .breadcrumbs .container-fluid a {
   font-size: 14px;
   font-weight: 400;
-  color: #2C3038;
+  color: #DC4F72;
   letter-spacing: 0;
   text-decoration: none;
+}
+.breadcrumbs .container-fluid a:hover {
+  text-decoration: underline;
 }
 .breadcrumbs .container-fluid .breadcrumb_last {
   font-size: 14px;
@@ -3799,7 +3878,7 @@ main .news .container .pagination .page-arrow .page-link span {
 .blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain {
   text-align: right;
 }
-.blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain .button {
+.blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain button {
   cursor: pointer;
   display: inline-block;
   line-height: 52px;
@@ -3814,7 +3893,7 @@ main .news .container .pagination .page-arrow .page-link span {
   color: #fff;
   transition: 0.3s ease-out;
 }
-.blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain .button:hover {
+.blog-single-main .blog-single-6 .container-fluid .wrapper .main-content .main-form .btn-contain button:hover {
   background: #bb1841;
 }
 
@@ -3831,7 +3910,7 @@ main .news .container .pagination .page-arrow .page-link span {
 .breadcrumbs .container-fluid a {
   font-size: 14px;
   font-weight: 400;
-  color: #2C3038;
+  color: #DC4F72;
   letter-spacing: 0;
   text-decoration: none;
 }
@@ -3978,7 +4057,7 @@ main .news .container .pagination .page-arrow .page-link span {
 .body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send {
   text-align: right;
 }
-.body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send .button {
+.body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send button {
   cursor: pointer;
   display: inline-block;
   line-height: 52px;
@@ -3993,7 +4072,7 @@ main .news .container .pagination .page-arrow .page-link span {
   color: #fff;
   transition: 0.3s ease-out;
 }
-.body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send .button:hover {
+.body .contact .container-fluid .main-content .contact-body .main-form .contact-form .form-body .btn-send button:hover {
   background: #bb1841;
 }
 .body .call-help {
