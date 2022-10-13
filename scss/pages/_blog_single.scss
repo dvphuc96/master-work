@@ -5,7 +5,7 @@
 .breadcrumbs {
   padding: 15px 20px;
   margin-top: 90px;
-  transition: all 1.5s;
+  transition: all 1s;
   .container-fluid {
     max-width: 1200px;
     margin: auto;
@@ -656,7 +656,7 @@
               }
             }
             .btn-contain {
-              @include button-form(30px,0);
+              @include button-form (30px,0);
             }
           }
         }
