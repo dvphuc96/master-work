@@ -1137,7 +1137,11 @@ header .navigation .container-fluid .menu .list .page .nav-link:hover {
 }
 header .navigation .container-fluid .menu .list .page .nav-link:hover::after {
   width: 20px;
-  left: 0px;
+}
+@media (min-width: 992px) and (max-width: 2000px) {
+  header .navigation .container-fluid .menu .list .page .nav-link:hover::after {
+    left: 8px;
+  }
 }
 header .navigation .container-fluid .menu .list .page .nav-link::after {
   content: "";
@@ -1808,11 +1812,27 @@ footer .container-fluid .wrapper .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+  footer .container-fluid .wrapper .copyright {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  footer .container-fluid .wrapper .copyright .columns {
+    width: 100%;
+  }
 }
 footer .container-fluid .wrapper .copyright .columns p {
   line-height: 22px;
   color: #5a5a5a;
   font-size: 16px;
+}
+@media screen and (max-width: 500px) {
+  footer .container-fluid .wrapper .copyright .columns p {
+    font-size: 14px;
+  }
 }
 footer .container-fluid .wrapper .copyright .columns p a {
   text-decoration: none;
@@ -1823,13 +1843,29 @@ footer .container-fluid .wrapper .copyright .columns p a {
 footer .container-fluid .wrapper .copyright .columns p a:hover {
   color: #DC4F72;
 }
+@media screen and (max-width: 992px) {
+  footer .container-fluid .wrapper .copyright .columns-2 {
+    text-align: center !important;
+  }
+}
 footer .container-fluid .wrapper .copyright .columns-2 .social {
   display: flex;
   justify-content: flex-end;
   list-style: none;
 }
+@media screen and (max-width: 992px) {
+  footer .container-fluid .wrapper .copyright .columns-2 .social {
+    justify-content: center;
+    padding: 0;
+  }
+}
 footer .container-fluid .wrapper .copyright .columns-2 .social li {
   margin: 0 10px;
+}
+@media screen and (max-width: 500px) {
+  footer .container-fluid .wrapper .copyright .columns-2 .social li {
+    margin: 0 5px;
+  }
 }
 footer .container-fluid .wrapper .copyright .columns-2 .social li a {
   color: #2C3038;
@@ -1843,6 +1879,11 @@ footer .container-fluid .wrapper .copyright .columns-2 .social li a {
 footer .container-fluid .wrapper .copyright .columns-2 .social li a i {
   font-size: 15px;
   transition: all 0.3s;
+}
+@media screen and (max-width: 500px) {
+  footer .container-fluid .wrapper .copyright .columns-2 .social li a i {
+    font-size: 13px;
+  }
 }
 footer .container-fluid .wrapper .copyright .columns-2 .social li a i:hover {
   color: #DC4F72;
@@ -2362,28 +2403,30 @@ textarea,
   position: absolute;
 }
 
-main .nav-page {
-  background-color: #f7f9fc;
+main .breadcrumbs {
+  padding: 15px 20px;
+  margin-top: 90px;
+  transition: all 1.5s;
 }
-main .nav-page .breadcrumbs .container {
+main .breadcrumbs .container-fluid {
   max-width: 1200px;
   margin: auto;
   padding: 0 25px;
 }
-main .nav-page .breadcrumbs .container a {
-  text-decoration: none;
+main .breadcrumbs .container-fluid a {
   font-size: 14px;
   font-weight: 400;
   color: #DC4F72;
   letter-spacing: 0;
+  text-decoration: none;
 }
-main .nav-page .breadcrumbs .container a:hover {
+main .breadcrumbs .container-fluid a:hover {
   text-decoration: underline;
 }
-main .nav-page .breadcrumbs .container .breadcrumbs-last {
+main .breadcrumbs .container-fluid .breadcrumb_last {
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: #2C3038;
   letter-spacing: 0;
 }
 main .Services {
@@ -2674,28 +2717,30 @@ main .features .container .row .col2 .content .title-service p {
 main .features .container .row .col2 .content .button {
   margin-top: 50px;
 }
-main .nav-page {
-  background-color: #f7f9fc;
+main .breadcrumbs {
+  padding: 15px 20px;
+  margin-top: 90px;
+  transition: all 1.5s;
 }
-main .nav-page .breadcrumbs .container {
+main .breadcrumbs .container-fluid {
   max-width: 1200px;
   margin: auto;
   padding: 0 25px;
 }
-main .nav-page .breadcrumbs .container a {
-  text-decoration: none;
+main .breadcrumbs .container-fluid a {
   font-size: 14px;
   font-weight: 400;
   color: #DC4F72;
   letter-spacing: 0;
+  text-decoration: none;
 }
-main .nav-page .breadcrumbs .container a:hover {
+main .breadcrumbs .container-fluid a:hover {
   text-decoration: underline;
 }
-main .nav-page .breadcrumbs .container .breadcrumbs-last {
+main .breadcrumbs .container-fluid .breadcrumb_last {
   font-size: 14px;
   font-weight: 400;
-  color: #000;
+  color: #2C3038;
   letter-spacing: 0;
 }
 main .carousel {
@@ -2986,9 +3031,12 @@ main .news .container .pagination .page-arrow .page-link span {
 .breadcrumbs .container-fluid a {
   font-size: 14px;
   font-weight: 400;
-  color: #2C3038;
+  color: #DC4F72;
   letter-spacing: 0;
   text-decoration: none;
+}
+.breadcrumbs .container-fluid a:hover {
+  text-decoration: underline;
 }
 .breadcrumbs .container-fluid .breadcrumb_last {
   font-size: 14px;
@@ -3814,7 +3862,7 @@ main .news .container .pagination .page-arrow .page-link span {
 .breadcrumbs .container-fluid a {
   font-size: 14px;
   font-weight: 400;
-  color: #2C3038;
+  color: #DC4F72;
   letter-spacing: 0;
   text-decoration: none;
 }
