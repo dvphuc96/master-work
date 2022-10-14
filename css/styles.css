@@ -2087,6 +2087,12 @@ footer .container-fluid .wrapper .copyright .columns-2 .social li a i:hover {
 .about_company .container .thumbnail-right img {
   border-radius: 5px;
   max-width: 100%;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.about_company .container .thumbnail-right img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 /*Counter css*/
