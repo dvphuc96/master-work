@@ -2437,6 +2437,18 @@ main .Services .container {
   margin: auto;
   padding: 0 25px;
 }
+@media screen and (max-width: 768px) {
+  main .Services .container {
+    margin: 0;
+    padding: 0;
+  }
+  main .Services .container h2 {
+    font-size: 38px !important;
+  }
+  main .Services .container .title {
+    text-align: start !important;
+  }
+}
 main .Services .container .title {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -2447,6 +2459,17 @@ main .Services .container .title h2 {
   font-weight: 800;
   color: #2C3038;
   letter-spacing: 0;
+}
+@media screen and (max-width: 768px) {
+  main .Services .container .content .row .col1 h3 {
+    font-size: 32px !important;
+  }
+  main .Services .container .content .row .col1 h5 {
+    font-size: 18px !important;
+  }
+  main .Services .container .content .row .col1 p {
+    font-size: 10px !important;
+  }
 }
 main .Services .container .content .row .col1 h3 {
   font-size: 42px;
@@ -2525,6 +2548,30 @@ main .products .container {
 main .products .container .title-content {
   margin: 0 200px;
   text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  main .products .container .title-content {
+    margin: auto;
+  }
+  main .products .container .title-content .sub-title {
+    font-size: 12px !important;
+    font-weight: 700;
+    color: #DC4F72;
+    letter-spacing: 0;
+  }
+  main .products .container .title-content h3 {
+    font-size: 42px !important;
+    font-weight: 700;
+    color: #2C3038;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+  main .products .container .title-content p {
+    font-size: 12px !important;
+    font-weight: 500;
+    color: #5A5A5A;
+    letter-spacing: 0;
+  }
 }
 main .products .container .title-content .sub-title {
   font-size: 16px;
@@ -2608,6 +2655,30 @@ main .features .container .title-content {
   margin: 0 200px;
   margin-bottom: 50px;
   text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  main .features .container .title-content {
+    margin: auto;
+  }
+  main .features .container .title-content .sub-title {
+    font-size: 12px !important;
+    font-weight: 700;
+    color: #DC4F72;
+    letter-spacing: 0;
+  }
+  main .features .container .title-content h3 {
+    font-size: 42px !important;
+    font-weight: 700;
+    color: #2C3038;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+  main .features .container .title-content p {
+    font-size: 12px !important;
+    font-weight: 500;
+    color: #5A5A5A;
+    letter-spacing: 0;
+  }
 }
 main .features .container .title-content .sub-title {
   font-size: 16px;
@@ -3013,6 +3084,9 @@ main .news .container .pagination .page-item .page-link.active {
 }
 main .news .container .pagination .page-arrow .page-link span {
   font-size: 12px;
+}
+main .news .container .pagination .page-item {
+  height: fit-content;
 }
 * {
   scroll-behavior: smooth;

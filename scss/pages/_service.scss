@@ -32,7 +32,7 @@ main {
       max-width: 1200px;
       margin: auto;
       padding: 0 25px;
-  
+
       a {
         @include text(14px, 400, $tertiary_text_color, 0);
         text-decoration: none;
@@ -40,7 +40,7 @@ main {
           text-decoration: underline;
         }
       }
-  
+
       .breadcrumb_last {
         @include text(14px, 400, $primary_text_color, 0);
       }
@@ -52,10 +52,21 @@ main {
       max-width: 1200px;
       margin: auto;
       padding: 0 25px;
+      @media screen and (max-width: 768px){
+          margin: 0;
+          padding: 0;
+          h2{
+            font-size: 38px !important;
+          }
+          .title{
+            text-align: start !important;
+          }
+      }
       .title {
         padding-top: 20px;
         padding-bottom: 10px;
         text-align: center;
+       
         h2 {
           @include text(46px, 800, $primary_text_color, 0);
         }
@@ -63,6 +74,17 @@ main {
       .content {
         .row {
           .col1 {
+            @media screen and (max-width: 768px) {
+              h3{
+                font-size: 32px !important;
+              }
+              h5{
+                font-size: 18px !important;
+              }
+              p{
+                font-size: 10px !important;
+              }
+            }
             h3 {
               @include text(42px, 600, $primary_text_color, 0);
               line-height: 1;
@@ -130,6 +152,19 @@ main {
       .title-content {
         margin: 0 200px;
         text-align: center;
+        @media only screen and (max-width: 992px) {
+          margin: auto;
+          .sub-title {
+            @include text(12px !important, 700, $tertiary_text_color, 0);
+          }
+          h3 {
+            @include text(42px !important, 700, $primary_text_color, 0);
+            line-height: 1;
+          }
+          p {
+            @include text(12px !important, 500, $secondary_text_color, 0);
+          }
+        }
         .sub-title {
           @include text(16px, 700, $tertiary_text_color, 0);
         }
@@ -206,6 +241,19 @@ main {
         margin: 0 200px;
         margin-bottom: 50px;
         text-align: center;
+        @media only screen and (max-width: 992px) {
+          margin: auto;
+          .sub-title {
+            @include text(12px !important, 700, $tertiary_text_color, 0);
+          }
+          h3 {
+            @include text(42px !important, 700, $primary_text_color, 0);
+            line-height: 1;
+          }
+          p {
+            @include text(12px !important, 500, $secondary_text_color, 0);
+          }
+        }
         .sub-title {
           @include text(16px, 700, $tertiary_text_color, 0);
         }
@@ -239,16 +287,15 @@ main {
                 );
                 text-decoration: none;
                 background-color: $tertiary_text_color;
-                
-                }
               }
             }
-            .image {
-              img{
-                border-radius: 8px;
-                transition: all 0.6s ease;
-                &:hover {
-                  transform: translateY(-10px);
+          }
+          .image {
+            img {
+              border-radius: 8px;
+              transition: all 0.6s ease;
+              &:hover {
+                transform: translateY(-10px);
               }
             }
           }
@@ -286,7 +333,6 @@ main {
             .button {
               margin-bottom: 50px;
               a {
-                
               }
             }
             .image {
