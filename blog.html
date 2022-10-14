@@ -22,57 +22,65 @@
 
 <body>
   <!-- <div class="side-right-bar"></div> -->
- <!-- Header Start -->
- <header id="header" class="bg-white">
-  <nav class="navbar navbar-expand-lg navigation bg-white">
-    <div class="container-fluid text-center">
-      <a id="logo" class="navbar-brand logo" href="index.html">
-        <span class="fa fa-handshake"></span>
-        <span>Masterwork</span>
-      </a>
-      <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="navbar-toggler-icon open-close"></i>
-      </button>
-      <div class="collapse navbar-collapse menu" id="navbarNav">
-        <ul class="navbar-nav ms-md-auto gap-2 list">
-          <li class="nav-item rounded home px-2">
-            <a class="nav-link" aria-current="page" href="index.html"></i>Home</a>
-          </li>
-          <li class="nav-item rounded about px-2">
-            <a class="nav-link" href="about.html"></i>About</a>
-          </li>
-          <li class="nav-item rounded service px-2">
-            <a class="nav-link" href="service.html"></i>Services</a>
-          </li>
-          <li class="nav-item dropdown page">
-            <a class="nav-link" style="color: #DC4F72;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Pages
-              <i class="fa fa-angle-down fs-6"></i>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="blog.html">Blog posts</a></li>
-              <li><a class="dropdown-item" href="blog-single.html">Blog single</a></li>
-              <li><a class="dropdown-item" href="landing-single.html">Landing page</a></li>
-            </ul>
-          </li>
-          <li class="nav-item rounded contact px-2">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item ml-lg-3 px-2 ml-0 mt-lg-0 mt-3 schedule">
-            <a class="btn btn-outline-primary theme-button button-schedule" href="contact.html">Schedule a Demo</a>
-          </li>
-        </ul>
+  <!-- Header Start -->
+  <header id="header" class="bg-white">
+    <nav class="navbar navbar-expand-lg navigation bg-white">
+      <div class="container-fluid text-center">
+        <a id="logo" class="navbar-brand logo" href="index.html">
+          <span class="fa fa-handshake"></span>
+          <span>Masterwork</span>
+        </a>
+        <button class="navbar-toggler" id="toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="navbar-toggler-icon open-close"></i>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarNav">
+          <ul class="navbar-nav ms-md-auto gap-2 list">
+            <li class="nav-item rounded home px-2">
+              <a class="nav-link" aria-current="page" href="index.html"></i>Home</a>
+            </li>
+            <li class="nav-item rounded about px-2">
+              <a class="nav-link" href="about.html"></i>About</a>
+            </li>
+            <li class="nav-item rounded service px-2">
+              <a class="nav-link" href="service.html"></i>Services</a>
+            </li>
+            <li class="nav-item dropdown page">
+              <a class="nav-link" style="color: #DC4F72;" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+                <i class="fa fa-angle-down fs-6"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="blog.html">Blog posts</a></li>
+                <li><a class="dropdown-item" href="blog-single.html">Blog single</a></li>
+                <li><a class="dropdown-item" href="landing-single.html">Landing page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item rounded contact px-2">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ml-lg-3 px-2 ml-0 mt-lg-0 mt-3 schedule">
+              <a class="btn btn-outline-primary theme-button button-schedule" href="contact.html">Schedule a Demo</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
-<!-- Header End -->
+    </nav>
+  </header>
+  <!-- Header End -->
   <!-- <nav id="breadcrumbs" class="breadcrumbs bg-light">
     <div class="container-fluid">
       <a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">Single Post</span>
     </div>
   </nav> -->
+  <!-- Breadcrumps Start -->
+  <nav id="breadcrumbs" class="breadcrumbs bg-light">
+    <div class="container-fluid">
+      <a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">Blog Posts</span>
+    </div>
+  </nav>
+  <!-- Breadcrumps End -->
   <main>
     <!-- <section class="nav-page">
       <nav class="breadcrumbs" id="breadcrumbs">
@@ -84,13 +92,6 @@
       </nav>
     </section> -->
 
-    <!-- Breadcrumps Start -->
-  <nav id="breadcrumbs" class="breadcrumbs bg-light">
-    <div class="container-fluid">
-      <a href="index.html">Home</a> » <span class="breadcrumb_last" aria-current="page">Blog Posts</span>
-    </div>
-  </nav>
-  <!-- Breadcrumps End -->
 
     <div style="margin: 8px auto; display: block; text-align:center;">
       <!---728x90--->
@@ -99,7 +100,7 @@
     <section class="carousel">
       <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner owl-carousel owl-theme d-block">
+          <div class="carousel-inner owl-carousel d-block">
             <div class="carousel-item active owl-item item">
               <div class="row row1">
                 <div class="col col-12 col-lg-6 col1">
@@ -318,7 +319,7 @@
 
         <ul class="pagination mt-5 justify-content-center">
           <li class="page-item page-arrow">
-            <a class="page-link" href="blog.html"> <span class="fa fa-angle-double-left"></span> Previous</a>
+            <a class="page-link" href="blog.html"> <span class="fa fa-angle-double-left"></span> <span class="content">Previous</span></a>
           </li>
           <li class="page-item">
             <a class="page-link active" href="blog.html">1</a>
@@ -330,7 +331,7 @@
             <a class="page-link" href="blog.html">3</a>
           </li>
           <li class="page-item page-arrow">
-            <a class="page-link" href="blog.html">Next <span class="fa fa-angle-double-right"></span></a>
+            <a class="page-link" href="blog.html"><span class="content">Next</span> <span class="fa fa-angle-double-right"></span></a>
           </li>
           <div class="clear"></div>
         </ul>
@@ -435,7 +436,9 @@
   </button>
   <!-- Button Back To Top End -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -445,8 +448,40 @@
     crossorigin="anonymous"></script>
 
   <!-- OWL JS -->
-  <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
 
+  <script>
+    $(document).ready(function () {
+      $('#owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 2,
+            nav: false
+          }
+        }
+      })
+  })
+  </script>
   <!-- Seft-defined Script -->
   <script>
 
@@ -457,11 +492,11 @@
       if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         document.querySelector("button.btn-backTop").style.display = "block"
         document.querySelector("header").style.height = "70px";
-        document.querySelector("breadcrumbs").style.marginTop = "70px";
+        // document.querySelector("breadcrumbs").style.marginTop = "70px";
       } else {
         document.querySelector("button.btn-backTop").style.display = "none"
         document.querySelector("header").style.height = "90px";
-        document.querySelector("breadcrumbs").style.marginTop = "90px";
+        // document.querySelector("breadcrumbs").style.marginTop = "90px";
       }
     }
     function topFunction() {
@@ -470,13 +505,14 @@
     }
   </script>
 
+
   <!-- <script>
     $('.owl-carousel').owlCarousel({
     loop:true,
-    margin: 0,
+    margin:10,
     nav:true,
-    items: 1,
-})
+    items:1, 
+    })
   </script> -->
 </body>
 
