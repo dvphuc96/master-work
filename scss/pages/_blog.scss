@@ -71,6 +71,7 @@ main {
                     overflow: hidden;
                   }
                   img {
+                    height: 100%;
                   }
                   .date {
                     position: absolute;
@@ -320,6 +321,24 @@ main {
           border-radius: 8px;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
           transition: all 0.5s ease;
+          height: fit-content;
+          @media screen and (max-width: 400px) {
+            margin: 0 5px;
+            &.page-arrow{
+              width: 86px;
+              text-align: center;
+            }
+            .page-link{
+              @media screen and (max-width: 310px){
+                padding: 0 5px;
+              }
+              span.fa{
+                font-size: 8px;
+                
+              }
+            }
+          }
+
           &:hover {
             .page-link {
               color: $tertiary_text_color;
@@ -331,7 +350,7 @@ main {
             border-radius: 8px;
             background-color: #ffffff;
             transition: all 0.5s ease;
-            @include text(16px, 600, $secondary_text_color, 0);
+            @include text(12px, 600, $secondary_text_color, 0);
             &.active {
               border-color: $tertiary_text_color;
             }
@@ -339,9 +358,11 @@ main {
         }
         .page-arrow {
           .page-link {
+            
             span {
               font-size: 12px;
             }
+            
           }
         }
         .clear {

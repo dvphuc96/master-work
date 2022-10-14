@@ -59,9 +59,9 @@
       .content-thumbnail {
         img {
           border-radius: 5px;
+          transition: all 0.5s;
           &:hover {
             transform: translateY(-15px);
-            transition: all 0.5s;
           }
         }
       }
@@ -252,6 +252,11 @@
         margin: 0px;
         padding: 0px 30px;
         text-transform: uppercase;
+        transition: all 0.5s;
+        &:hover{
+          background-color: #da2250;
+
+        }
       }
     }
   }
@@ -313,8 +318,18 @@
     }
     .members-bottom {
       .card {
+        @include hover-translateY(); 
         border-radius: 6px;
         border: 1px solid #eee;
+        &:hover{
+          .card-body{
+            .name_staff{
+              a{
+                color: $tertiary_text_color;
+              }
+            }
+          }
+        }
         .img-redirect {
           position: relative;
           width: 100%;
@@ -343,11 +358,9 @@
             a {
               font-size: 20px;
               color: #000;
-              font-weight: bold;
+              font-weight: 900;
               text-decoration: none;
-              &:hover {
-                color: #dc4f72;
-              }
+              transition: all 0.5s;
             }
             p {
               font-size: 16px;
@@ -376,6 +389,24 @@
               background: #1da1f2;
             }
           }
+        }
+      }
+    }
+  }
+}
+.community{
+  .container{
+    .community-top{
+      .title{
+
+      }
+      .description{}
+    }
+    .community-bottom{
+      a.right{
+        transition: all 0.5s;
+        &:hover{
+          background-color: #da2250;
         }
       }
     }
