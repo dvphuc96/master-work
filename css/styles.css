@@ -5084,6 +5084,100 @@ main .news .container .pagination .page-arrow .page-link span {
   background: #bb1841;
 }
 
+main .affirmation {
+  background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../../img/bg.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 480px;
+  display: grid;
+  align-items: center;
+  padding: 2rem 0;
+}
+@media screen and (min-width: 300px) {
+  main .affirmation .container-fluid {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 576px) {
+  main .affirmation .container-fluid {
+    max-width: 100%;
+    padding: 0 25px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .affirmation .container-fluid {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .affirmation .container-fluid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 25px;
+  }
+}
+main .affirmation .container-fluid .main-content {
+  max-width: 550px;
+}
+main .affirmation .container-fluid .main-content .heading h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+@media screen and (max-width: 576px) {
+  main .affirmation .container-fluid .main-content .heading h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+}
+main .affirmation .container-fluid .main-content .content .para {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 24.5px;
+}
+@media screen and (max-width: 576px) {
+  main .affirmation .container-fluid .main-content .content .para {
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 20.5px;
+  }
+}
+main .affirmation .container-fluid .main-content .content .btn-readMore {
+  text-decoration: none;
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  transition: 0.3s ease-out;
+  display: inline-block;
+  line-height: 52px;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  main .affirmation .container-fluid .main-content .content .btn-readMore {
+    margin-top: 10px;
+    padding: 0px 20px;
+  }
+}
+
 .breadcrumbs {
   padding: 15px 20px;
   margin-top: 90px;
