@@ -100,7 +100,7 @@
     <section class="carousel">
       <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner owl-carousel owl-theme d-block">
+          <div class="carousel-inner owl-carousel d-block">
             <div class="carousel-item active owl-item item">
               <div class="row row1">
                 <div class="col col-12 col-lg-6 col1">
@@ -319,7 +319,7 @@
 
         <ul class="pagination mt-5 justify-content-center">
           <li class="page-item page-arrow">
-            <a class="page-link" href="blog.html"> <span class="fa fa-angle-double-left"></span> Previous</a>
+            <a class="page-link" href="blog.html"> <span class="fa fa-angle-double-left"></span> <span class="content">Previous</span></a>
           </li>
           <li class="page-item">
             <a class="page-link active" href="blog.html">1</a>
@@ -331,7 +331,7 @@
             <a class="page-link" href="blog.html">3</a>
           </li>
           <li class="page-item page-arrow">
-            <a class="page-link" href="blog.html">Next <span class="fa fa-angle-double-right"></span></a>
+            <a class="page-link" href="blog.html"><span class="content">Next</span> <span class="fa fa-angle-double-right"></span></a>
           </li>
           <div class="clear"></div>
         </ul>
@@ -448,8 +448,40 @@
     crossorigin="anonymous"></script>
 
   <!-- OWL JS -->
-  <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
 
+  <script>
+    $(document).ready(function () {
+      $('#owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplaySpeed: 1000,
+        autoplayHoverPause: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+          480: {
+            items: 1,
+            nav: false
+          },
+          667: {
+            items: 1,
+            nav: false
+          },
+          1000: {
+            items: 2,
+            nav: false
+          }
+        }
+      })
+  })
+  </script>
   <!-- Seft-defined Script -->
   <script>
 
@@ -460,11 +492,11 @@
       if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         document.querySelector("button.btn-backTop").style.display = "block"
         document.querySelector("header").style.height = "70px";
-        document.querySelector("breadcrumbs").style.marginTop = "70px";
+        // document.querySelector("breadcrumbs").style.marginTop = "70px";
       } else {
         document.querySelector("button.btn-backTop").style.display = "none"
         document.querySelector("header").style.height = "90px";
-        document.querySelector("breadcrumbs").style.marginTop = "90px";
+        // document.querySelector("breadcrumbs").style.marginTop = "90px";
       }
     }
     function topFunction() {
@@ -473,13 +505,14 @@
     }
   </script>
 
+
   <!-- <script>
     $('.owl-carousel').owlCarousel({
     loop:true,
-    margin: 0,
+    margin:10,
     nav:true,
-    items: 1,
-})
+    items:1, 
+    })
   </script> -->
 </body>
 
