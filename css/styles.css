@@ -1923,6 +1923,84 @@ footer .container-fluid .wrapper .copyright .columns-2 .social li a i:hover {
   background-color: #df2251;
 }
 
+.toggle-right-sidebar {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 70px;
+  width: 120px;
+  z-index: 99999;
+  text-align: center;
+}
+.toggle-right-sidebar .icon {
+  background: #0D1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.side-bar {
+  width: 120px;
+  position: fixed;
+  height: 100%;
+  z-index: 10;
+  right: 0px;
+  top: 0;
+  margin-top: 60px;
+  transition: all 0.5s ease-in-out;
+  overflow-y: auto;
+}
+.side-bar .container .main-content {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 5px;
+  padding-top: 70px;
+  margin-bottom: 70px;
+  background: #0D1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+.side-bar .container .main-content .btns {
+  border-top: 1px solid #41414d;
+  padding-top: 20px;
+}
+.side-bar .container .main-content .btns a {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.side-bar .container .main-content .btns a:hover {
+  opacity: 1;
+}
+.side-bar .container .main-content .btns a .icon {
+  display: block;
+}
+.side-bar .container .main-content .btns a .icon span {
+  display: inline-block;
+}
+.side-bar .container .main-content .btns a .text {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: 0.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 /*carousel css*/
 .carousel_home {
   margin-top: 90px;
